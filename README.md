@@ -21,7 +21,7 @@ cd src && gcc -o ..\2tis48.exe *.c ..\data\icon.res ..\data\exeinfo.res -s -stat
 ### Linux
 Again, you can build for any concievable setup. First, you must [build raylib for Linux](https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux).
 #### Raspberry Pi
-[Build raylib for Raspberry Pi](https://github.com/raysan5/raylib/wiki/Working-on-Raspberry-Pi), then:
+[Build raylib for Raspberry Pi](https://github.com/raysan5/raylib/wiki/Working-on-Raspberry-Pi) for PLATFORM_DESKTOP, then:
 ```bash
 git clone https://github.com/NotBart/2tis48
 cd 2tis48/src
