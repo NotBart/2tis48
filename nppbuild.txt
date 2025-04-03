@@ -1,0 +1,13 @@
+SET RAYLIB_PATH=C:\raylib\raylib
+SET COMPILER_PATH=C:\raylib\w64devkit\bin
+ENV_SET PATH=$(COMPILER_PATH)
+SET CC=gcc
+SET CFLAGS=..\data\icon.res ..\data\exeinfo.res -s -static -O2 -std=c99 -Wall -I$(RAYLIB_PATH)\src -Iexternal -DPLATFORM_DESKTOP -mwindows
+SET LDFLAGS=-lraylib -lopengl32 -lgdi32 -lwinmm
+cd $(CURRENT_DIRECTORY)
+cmd /c IF EXIST ..\2tis48.exe del /F ..\2tis48.exe
+npp_save
+$(CC) --version
+$(CC) -o ..\2tis48.exe *.c $(CFLAGS) $(LDFLAGS)
+ENV_UNSET PATH
+cmd /c IF EXIST ..\2tis48.exe ..\2tis48.exe
