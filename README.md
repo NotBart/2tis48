@@ -42,8 +42,11 @@ When you make a move...
 
 ## PVA requirements
 Name: Bartoloměj Bičovský
+
 Class: C1  (2024/25)
-Grading Period: 3rd quarter  
+
+Grading Period: 3rd quarter
+
 Goal: Implement a 2048 clone in C
 
 ### Steps:
