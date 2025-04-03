@@ -1,5 +1,6 @@
 # 2tis48
 2tis48 is a 2048 clone written in C using [raylib](https://github.com/raysan5/raylib)
+
 This is my first actual C project, so it's horrible in every possible way. But hey, it works!
 >Video: https://youtu.be/uPiteYOYonQ
 
